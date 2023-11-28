@@ -1,0 +1,82 @@
+/* Styles.css */
+
+/* Add the existing styles */
+
+/* Additional styling for form elements in Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario label {
+    margin-bottom: 8px;
+    color: #000; /* Set label text color */
+  }
+  
+  .formulario input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #000; /* Set input text color */
+  }
+  
+/* Styles.css */
+
+/* Additional styling for form elements in Formulario */
+.formulario button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .formulario button.success {
+    background-color: #28a745; /* Green color for success */
+  }
+  
+  .formulario button.danger {
+    background-color: #dc3545; /* Red color for danger */
+  }
+  
+  .formulario button:hover {
+    filter: brightness(90%); /* Slightly darken on hover */
+  }
+  
+  
+  
+  /* Alert styles */
+  .alert {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #dc3545; /* Red color for danger */
+    color: #fff;
+  }
+  
+  .success {
+    background-color: #28a745;
+  }
+  
+  .danger {
+    background-color: #dc3545;
+  }
+  
+  /* Styles.css */
+
+/* Style for individual circle buttons */
+.social-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Add the existing styles */
+  
