@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState } from 'react';
 import Registro from './Registro';
 import Alert from './Alert';
@@ -6,16 +5,14 @@ import Alert from './Alert';
 const App = () => {
   const [alertMessage, setAlertMessage] = useState('');
 
-  const handleRegister = ({ name, email, password }) => {
-    // Add your registration logic here
-    // For example, you can set a success message if registration is successful
-    setAlertMessage(`Registration successful for ${name} with email ${email}!`);
+  const handleRegister = ({ success, message }) => {
+    setAlertMessage({ success, message });
   };
 
   return (
-    <div>
+    <div className="container">
       <Registro handleRegister={handleRegister} />
-      <Alert message={alertMessage} />
+      <Alert success={alertMessage.success} message={alertMessage.message} />
     </div>
   );
 };

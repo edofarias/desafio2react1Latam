@@ -1,9 +1,8 @@
-// src/Alert.jsx
 import React from 'react';
 
 const Alert = ({ success, message }) => {
-  return <div className={`alert ${success ? 'success' : 'danger'}`}>{message}</div>;
+  const alertClass = success ? 'alert-success' : 'alert-danger';
+  return <div className={`alert ${alertClass}`}>{message}</div>;
 };
 
 export default Alert;
-

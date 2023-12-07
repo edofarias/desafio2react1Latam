@@ -1,7 +1,6 @@
-// src/Formulario.jsx
 import React, { useState } from 'react';
 
-const Formulario = ({ handleRegister }) => {
+const Formulario = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -15,15 +14,9 @@ const Formulario = ({ handleRegister }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email) || password !== confirmPassword) {
-      handleRegister({ success: false, message: 'Complete todos los campos' });
-    } else {
-      handleRegister({ success: true, message: 'Registro exitoso!' });
-    }
-  };
+    // Validation logic...
 
-  const validateEmail = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
+    // Handle registration logic...
   };
 
   return (
@@ -33,7 +26,7 @@ const Formulario = ({ handleRegister }) => {
         <input type="text" value={name} onChange={handleNameChange} />
       </label>
       <label>
-        Email:
+        Correo:
         <input type="email" value={email} onChange={handleEmailChange} />
       </label>
       <label>
@@ -41,10 +34,10 @@ const Formulario = ({ handleRegister }) => {
         <input type="password" value={password} onChange={handlePasswordChange} />
       </label>
       <label>
-        Confirme Contraseña:
+        Confirmar Contraseña:
         <input type="password" value={confirmPassword} onChange={handleConfirmPasswordChange} />
       </label>
-      <button type="submit" className="register-button">
+      <button type="submit" className="btn btn-primary">
         Registrar
       </button>
     </form>
